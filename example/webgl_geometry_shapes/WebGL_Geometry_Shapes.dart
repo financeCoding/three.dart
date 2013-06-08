@@ -158,10 +158,10 @@ class WebGL_Geometry_Shapes  {
     // Triangle
 
     var triangleShape = new Shape();
-    triangleShape.moveTo(  80, 20 );
-    triangleShape.lineTo(  40, 80 );
-    triangleShape.lineTo( 120, 80 );
-    triangleShape.lineTo(  80, 20 ); // close path
+    triangleShape.moveTo(  80.0, 20.0 );
+    triangleShape.lineTo(  40.0, 80.0 );
+    triangleShape.lineTo( 120.0, 80.0 );
+    triangleShape.lineTo(  80.0, 20.0 ); // close path
 
     var triangle3d = triangleShape.extrude(
         amount: extrude_amount,
@@ -174,17 +174,17 @@ class WebGL_Geometry_Shapes  {
 
     // Heart
 
-    var x = 0, y = 0;
+    var x = 0.0, y = 0.0;
 
     var heartShape = new Shape(); // From http://blog.burlock.org/html5/130-paths
 
-    heartShape.moveTo( x + 25, y + 25 );
-    heartShape.bezierCurveTo( x + 25, y + 25, x + 20, y, x, y );
-    heartShape.bezierCurveTo( x - 30, y, x - 30, y + 35,x - 30,y + 35 );
-    heartShape.bezierCurveTo( x - 30, y + 55, x - 10, y + 77, x + 25, y + 95 );
-    heartShape.bezierCurveTo( x + 60, y + 77, x + 80, y + 55, x + 80, y + 35 );
-    heartShape.bezierCurveTo( x + 80, y + 35, x + 80, y, x + 50, y );
-    heartShape.bezierCurveTo( x + 35, y, x + 25, y + 25, x + 25, y + 25 );
+    heartShape.moveTo( x + 25.0, y + 25.0 );
+    heartShape.bezierCurveTo( x + 25.0, y + 25.0, x + 20.0, y, x, y );
+    heartShape.bezierCurveTo( x - 30.0, y, x - 30.0, y + 35.0, x - 30.0, y + 35.0 );
+    heartShape.bezierCurveTo( x - 30.0, y + 55.0, x - 10.0, y + 77.0, x + 25.0, y + 95.0 );
+    heartShape.bezierCurveTo( x + 60.0, y + 77.0, x + 80.0, y + 55.0, x + 80.0, y + 35.0 );
+    heartShape.bezierCurveTo( x + 80.0, y + 35.0, x + 80.0, y, x + 50.0, y );
+    heartShape.bezierCurveTo( x + 35.0, y, x + 25.0, y + 25.0, x + 25.0, y + 25.0 );
 
     var heart3d = heartShape.extrude(
         amount: extrude_amount,
@@ -198,14 +198,14 @@ class WebGL_Geometry_Shapes  {
 
     // Square
 
-    var sqLength = 80;
+    var sqLength = 80.0;
 
     var squareShape = new Shape();
-    squareShape.moveTo( 0,0 );
-    squareShape.lineTo( 0, sqLength );
+    squareShape.moveTo( 0.0, 0.0 );
+    squareShape.lineTo( 0.0, sqLength );
     squareShape.lineTo( sqLength, sqLength );
-    squareShape.lineTo( sqLength, 0 );
-    squareShape.lineTo( 0, 0 );
+    squareShape.lineTo( sqLength, 0.0 );
+    squareShape.lineTo( 0.0, 0.0 );
 
     var square3d = squareShape.extrude(
         amount: extrude_amount,
@@ -217,14 +217,14 @@ class WebGL_Geometry_Shapes  {
 
     // Rectangle
 
-    var rectLength = 120, rectWidth = 40;
+    var rectLength = 120.0, rectWidth = 40.0;
 
     var rectShape = new Shape();
-    rectShape.moveTo( 0,0 );
-    rectShape.lineTo( 0, rectWidth );
+    rectShape.moveTo( 0.0,0.0 );
+    rectShape.lineTo( 0.0, rectWidth );
     rectShape.lineTo( rectLength, rectWidth );
-    rectShape.lineTo( rectLength, 0 );
-    rectShape.lineTo( 0, 0 );
+    rectShape.lineTo( rectLength, 0.0 );
+    rectShape.lineTo( 0.0, 0.0 );
 
     var rect3d = rectShape.extrude(
         amount: extrude_amount,
@@ -237,7 +237,7 @@ class WebGL_Geometry_Shapes  {
     // Rounded rectangle
 
     var roundedRectShape = new Shape();
-    roundedRect( roundedRectShape, 0, 0, 50, 50, 20 );
+    roundedRect( roundedRectShape, 0.0, 0.0, 50.0, 50.0, 20.0 );
 
     var roundedRect3d = roundedRectShape.extrude(
         amount: extrude_amount,

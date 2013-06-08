@@ -19,7 +19,7 @@ class Shape extends Path {
 
   // Convenience method to return ExtrudeGeometry
   extrude( {amount: 100,
-            bevelThickness: 6,
+            bevelThickness: 6.0,
             bevelSize: null,
             bevelSegments: 3,
             bevelEnabled: true,
